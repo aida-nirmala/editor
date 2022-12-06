@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tambah Jadwal</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="tes">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Tambah
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label position="floating">Tanggal</ion-label>
+      <ion-input required [(ngModel)]="tanggal" placeholder="Masukkan Nama Tanggal" type="date">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Hari</ion-label>
+      <ion-input required [(ngModel)]="hari" placeholder="Masukkan Hari" type="text">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Jam</ion-label>
+      <ion-input required [(ngModel)]="jam" placeholder="Masukkan Jam" type="text">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mata Kuliah</ion-label>
+      <ion-input required [(ngModel)]="mata_kuliah" placeholder="Masukkan Mata Kuliah" type="text">
+      </ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="addJadwal()" color="primary" shape="full" expand="block">Tambah
+          Jadwal
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
